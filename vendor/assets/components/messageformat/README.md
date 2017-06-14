@@ -440,12 +440,12 @@ Very simply, you can nest both `SelectFormat` blocks into `PluralFormat` blocks,
 
 ```
 {SEL1, select,
-  other {{PLUR1, plural,
+  other { {PLUR1, plural,
           one {1}
-          other {{SEL2, select,
+          other { {SEL2, select,
                   other {deep in the heart.}
-                }}
-        }}
+                } }
+        } }
 }
 ```
 
